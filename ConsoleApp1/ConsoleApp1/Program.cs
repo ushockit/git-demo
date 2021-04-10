@@ -35,8 +35,6 @@ namespace ConsoleApp1
                     case 3:
                         Environment.Exit(0);
                         break;
-                    default:
-                        break;
                 }
                 Console.ForegroundColor = ConsoleColor.Gray;
             }
