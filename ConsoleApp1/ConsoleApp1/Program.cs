@@ -6,7 +6,6 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.ForegroundColor = ConsoleColor.Gray;
             int action;
             while(true)
             {
@@ -22,21 +21,23 @@ namespace ConsoleApp1
                 int.TryParse(Console.ReadLine(), out action);
 
 
-                switch (action)
-                {
-                    case 1:
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Login in the system");
-                        break;
-                    case 2:
-                        Console.ForegroundColor = ConsoleColor.Green;
-                        Console.WriteLine("Registration in the system");
-                        break;
-                    case 3:
-                        Environment.Exit(0);
-                        break;
-                }
-                Console.ForegroundColor = ConsoleColor.Gray;
+                Menu(action);
+            }
+        }
+
+        static void Menu(int action)
+        {
+            switch (action)
+            {
+                case 1:
+                    Console.WriteLine("Авторизация в системе");
+                    break;
+                case 2:
+                    Console.WriteLine("Регистрация в системе");
+                    break;
+                case 3:
+                    Environment.Exit(0);
+                    break;
             }
         }
     }
