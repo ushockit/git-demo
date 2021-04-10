@@ -13,11 +13,11 @@ namespace ConsoleApp1
                 Console.Clear();
 
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("\t[1] Логин");
+                Console.WriteLine("\t[1] Login");
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("\t[2] Регистрация");
+                Console.WriteLine("\t[2] Registration");
                 Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine("\t[3] Выход");
+                Console.WriteLine("\t[3] Exit");
                 Console.ForegroundColor = ConsoleColor.Gray;
                 int.TryParse(Console.ReadLine(), out action);
 
@@ -25,10 +25,10 @@ namespace ConsoleApp1
                 switch (action)
                 {
                     case 1:
-                        Console.WriteLine("Авторизация в системе");
+                        Console.WriteLine("Login in the system");
                         break;
                     case 2:
-                        Console.WriteLine("Регистрация в системе");
+                        Console.WriteLine("Registration in the system");
                         break;
                     case 3:
                         Environment.Exit(0);
