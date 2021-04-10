@@ -20,6 +20,22 @@ namespace ConsoleApp1
                 Console.WriteLine("\t[3] Выход");
                 Console.ForegroundColor = ConsoleColor.Gray;
                 int.TryParse(Console.ReadLine(), out action);
+
+
+                switch (action)
+                {
+                    case 1:
+                        Console.WriteLine("Авторизация в системе");
+                        break;
+                    case 2:
+                        Console.WriteLine("Регистрация в системе");
+                        break;
+                    case 3:
+                        Environment.Exit(0);
+                        break;
+                    default:
+                        break;
+                }
             }
         }
     }
