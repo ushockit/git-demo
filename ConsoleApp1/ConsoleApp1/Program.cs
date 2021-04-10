@@ -25,17 +25,18 @@ namespace ConsoleApp1
                 switch (action)
                 {
                     case 1:
+                        Console.ForegroundColor = ConsoleColor.Red;
                         Console.WriteLine("Login in the system");
                         break;
                     case 2:
+                        Console.ForegroundColor = ConsoleColor.Green;
                         Console.WriteLine("Registration in the system");
                         break;
                     case 3:
                         Environment.Exit(0);
                         break;
-                    default:
-                        break;
                 }
+                Console.ForegroundColor = ConsoleColor.Gray;
             }
         }
     }
